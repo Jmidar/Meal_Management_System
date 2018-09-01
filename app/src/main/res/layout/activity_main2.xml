@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvDate"
+        android:layout_alignStart="@+id/txtMorningCost"
+        android:text="Date :"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/tvDate"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etxtMorningCost"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Select Date"
+        android:inputType="date" />
+
+
+    <TextView
+        android:id="@+id/txtMorningCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="81dp"
+        android:text="Morning Cost :"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etxtMorningCost"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Morning Cost"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtLunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtDate"
+        android:layout_marginTop="138dp"
+        android:text="Lunch Cost :"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etxtLunchCost"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtLunch"
+        android:layout_alignStart="@+id/tvDate"
+        android:ems="10"
+        android:hint="Lunch Cost"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtNightCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtDate"
+        android:layout_marginTop="195dp"
+        android:text="Night Cost :"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etxtNightCost"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtNightCost"
+        android:layout_alignStart="@+id/etxtMorningCost"
+        android:ems="10"
+        android:hint="Night Cost"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtOthersCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etxtOthersCost"
+        android:layout_alignStart="@+id/txtDate"
+        android:text="Others Cost :"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etxtOthersCost"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/etxtMorningCost"
+        android:layout_marginBottom="216dp"
+        android:ems="10"
+        android:hint="Others Cost"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtDate"
+        android:layout_marginBottom="167dp"
+        android:text="Note :"
+        android:textSize="18sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/etxtNote"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtNote"
+        android:layout_alignStart="@+id/etxtMorningCost" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Submit" />
+
+</RelativeLayout>
